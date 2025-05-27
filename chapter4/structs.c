@@ -8,6 +8,14 @@ struct car
     int speed;
 };
 
+typedef struct
+{
+    /* data */
+    char *name;
+    float price;
+    int speed;
+} car2;
+
 void set_price(struct car *c, int price)
 {
     // c.price = new_price; // ERROR!! -- must dereference the pointer to get bac to the struct
